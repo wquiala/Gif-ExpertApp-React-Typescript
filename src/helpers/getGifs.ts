@@ -1,7 +1,7 @@
 import { Gifs } from '../interfaces/gif';
 
 export const getGif = async (categoria: string) => {
-  const url = `http://api.giphy.com/v1/gifs/search?q=${encodeURI(
+  const url = `https://api.giphy.com/v1/gifs/search?q=${encodeURI(
     categoria,
   )}&limit=10&api_key=ZVvjZolCa0EEnRZfNENg8UTYdXhexEA0`;
   const resp = await fetch(url);
